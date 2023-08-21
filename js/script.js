@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-    // //네비게이션 메뉴
-    // $("header .nav_box ul.main>li").mouseenter(function(){
-    //     $(this).find("ul.sub_menu").stop().fadeIn();
+    //네비게이션 메뉴
+    // $("header nav ul.main>li").mouseenter(function(){
+    //     $("ul.sub").stop().slideDown();
     // });
-    // $("header .nav_box ul.main>li").mouseleave(function(){
-    //     $(this).find("ul.sub_menu").stop().fadeOut();
+    // $("header nav ul.main>li").mouseleave(function(){
+    //     $("ul.sub").stop().slideUp();
     // });
 
 

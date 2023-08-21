@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class="wrap">
-       <header>
+       <header class="clearfix">
         <div class="header_box">
             <div class="top-banner flex-ver">
                 <div class="arrow-left">
@@ -34,20 +34,20 @@
                 </div>
             </div>
             <div class="topbar_wrap clearfix">
-                <div class="logo_box">
+                <h1>
                     <li><a href="#"><img src="images/logo.png" alt="Calvin"></a></li>
-                </div>
-                <div class="nav_box">
+                </h1>
+                <nav>
                     <ul class="main clearfix">
                         <li><a href="#"><span>NEW</span></a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">APPARELS</a></li>
                             <li><a href="#">UNDERWEAR</a></li>
                             <li><a href="#">ACC</a></li>
                         </ul>
                         </li>
                         <li><a href="#">MEN</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">OUTER</a></li>
                             <li><a href="#">SWEATSHIRTS</a></li>
                             <li><a href="#">T-SHIRTS</a></li>
@@ -57,7 +57,7 @@
                         </ul>
                         </li>
                         <li><a href="#">WOMEN</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">OUTER</a></li>
                             <li><a href="#">SWEATSHIRTS</a></li>
                             <li><a href="#">T-SHIRTS</a></li>
@@ -68,7 +68,7 @@
                         </ul>
                         </li>
                         <li><a href="#">UNDERWEAR</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">MULTIPACK</a></li>
                             <li><a href="#">BRA</a></li>
                             <li><a href="#">PANTY</a></li>
@@ -77,7 +77,7 @@
                         </ul>
                         </li>
                         <li><a href="#">SPORTS</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">OUTER</a></li>
                             <li><a href="#">SWEATSHIRTS</a></li>
                             <li><a href="#">T-SHIRTS</a></li>
@@ -90,7 +90,7 @@
                         </ul>
                         </li>
                         <li><a href="#">ACCESSORY</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">BAG</a></li>
                             <li><a href="#">BELT</a></li>
                             <li><a href="#">SHOES</a></li>
@@ -98,27 +98,27 @@
                             <li><a href="#">WALLET</a></li>
                         </ul>
                         <li><a href="#">KIDS</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">TOP</a></li>
                             <li><a href="#">BOTTOM</a></li>
                             <li><a href="#">UNDERWEAR</a></li>
                         </ul>
                         </li>
                         <li><a href="#">JEANS</a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">MEN</a></li>
                             <li><a href="#">WOMEN</a></li>
                         </ul>
                         </li>
                         <li><a href="#"><span>SALE</span></a>
-                        <ul class="sub_menu">
+                        <ul class="sub">
                             <li><a href="#">GIFT PLAN</a></li>
                             <li><a href="#">STANDARDS</a></li>
                             <li><a href="#">SPECIAL PRICE</a></li>
                         </ul>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
        </header>
     <div class="swiper-container">
@@ -492,19 +492,15 @@
     </div>
     <script type="text/javascript">
 
-        var a = $("header .nav_box ul.gnb>li");
+        var a = $("header nav ul.main>li");
 
-        $("header .nav_box ul.gnb>li").mouseover(function(){
-            if($("ul.sub_menu")).is(':animated'){
-                $(this).animate({
-                    
-                },1000);
-            }
-        },function(){
-        $("header .nav_box ul.main>li").mouseout(function(){
-        $(this).find("ul.sub_menu").stop().fadeOut();
-    });
+        $("header nav ul.main>li").mouseover(function(){
+            $(this).children("ul.sub").stop().fadeIn();
+        }),
+        $("header nav ul.main>li").mouseleave(function(){
+        $(this).children("ul.sub").stop().fadeOut();  
         });
+
     </script>
     <script type="text/javascript">
 
