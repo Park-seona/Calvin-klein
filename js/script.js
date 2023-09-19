@@ -18,11 +18,11 @@ $(document).ready(function(){
     });
     
     //컬렉션 배너
-    $(".collection_banner .item1_wrapper .item1").mouseover(function(){
+    $(".collection_banner .item1_wrapper").mouseenter(function(){
         $(".item1_wrapper .item1_box").stop().animate({"bottom":"15px"},280);
     });
-    $(".collection_banner  .item1_wrapper .item1 img,.item1_wrapper .item1_box").mouseout(function(){
-        $(".collection_banner .item1_wrapper .item1_box").stop().animate({"bottom":"-50px"},280);
+    $(".collection_banner .item1_wrapper").mouseleave(function(){
+        $(".item1_wrapper .item1_box").stop().animate({"bottom":"-50px"},280);
     });
     $(".contents .item2_wrapper .item2 img,.item2_wrapper .item2_box").mouseenter(function(){
         $(".collection_banner .item2_wrapper .item2_box").stop().animate({"bottom":"15px"},280);
@@ -31,4 +31,11 @@ $(document).ready(function(){
         $(".collection_banner .item2_wrapper .item2_box").stop().animate({"bottom":"-50px"},280);
     });
     
+    // //레이어 팝업
+    // $("header nav ul.main .icon").click(function(){
+    //     $(".modal").fadeIn();
+    // });
+    // $(".btn").click(function(){
+    //     $(".modal").fadeOut();
+    // });
 });
