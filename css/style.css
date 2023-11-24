@@ -205,6 +205,8 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .swiper-container .swiper-wrapper .swiper-slide .slide-box {
     position: relative;
+    background: cover;
+    
 }
 .swiper-container .swiper-wrapper .swiper-slide .slide-box .main2_btn {
     position: absolute;
@@ -257,6 +259,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .new_nav li { 
     font-size: 36px;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 .swiper-container2 { 
@@ -360,11 +363,12 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 .contents .collection_banner .item1_wrapper .item1 {
     width: 483px;
     height: 500px;
+    box-shadow: 5px 5px 5px solid #ddd;
 }
 .contents .collection_banner .item1_wrapper .item1 img {
     margin-top: 70px;
-    width: 483px;
-    height: 440px;
+    width: 100%;
+    height: auto;
 }
 .contents .collection_banner .item1_wrapper .item1_box {
     position: absolute;
@@ -395,8 +399,8 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .collection_banner .item2_wrapper .item2 img {
     margin-top: 70px;
-    width: 483px;
-    height: 440px;
+    width: 100%;
+    height: auto;
 }
 .contents .collection_banner .item2_wrapper .item2_box {
     position: absolute;
@@ -430,6 +434,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .best_banner .best_nav .best_tit{
     font-size: 36px;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 .contents .best_banner .best_nav .best_row1 {
@@ -777,7 +782,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
     position: absolute;
     left: 50%;
     top: 37%;
-    transform: translate(-50%, -37%);
+    transform: translate(-50%, 10%);
     width: 468px;
     height: 72px;
     /* background: #fff; */
@@ -796,15 +801,15 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     width: 200px;
     height: 50px;
     margin-top: 10px;
-    background: #fff;
+    background-color:transparent;
     font-size: 17px;
     color: #333;
     box-sizing: border-box;
-    border: 1px solid #333;
+    border: 2px solid #333;
 }
 .contents .preview_banner .prev1 .item1_wrapper .item1_box .btn:hover {
     color: #fff;
@@ -861,16 +866,32 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .preview_banner .prev2 .item2_box p {
     position: absolute;
-    left: 323px;
+    left: 336px;
     top: 277px;
     color: #333;
     font-size: 14px;
 }
-.contents .preview_banner .prev2 .item2_box span {
+.contents .preview_banner .prev2 .item2_box del {
     position: absolute;
-    left: 408px;
+    left: 330px;
+    top: 297px;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contents .preview_banner .prev2 .item2_box .price_01 {
+    position: absolute;
+    left: 414px;
     top: 297px;
     color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contents .preview_banner .prev2 .item2_box .price_02 {
+    position: absolute;
+    left: 497px;
+    top: 297px;
+    color: red;
     font-size: 13px;
     font-weight: bold;
 }
@@ -888,17 +909,33 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .preview_banner .prev2 .item3_box p {
     position: absolute;
-    left: 32px;
+    left: 54px;
     top: 603px;
     color: #333;
     font-size: 14px;
 }
-.contents .preview_banner .prev2 .item3_box span {
+.contents .preview_banner .prev2 .item3_box del {
     position: absolute;
-    left: 108px;
+    left: 38px;
+    top: 623px;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contents .preview_banner .prev2 .item3_box .price_01 {
+    position: absolute;
+    left: 122px;
     top: 623px;
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contents .preview_banner .prev2 .item3_box .price_02 {
+    position: absolute;
+    left: 204px;
+    top: 623px;
+    color: red;
+    font-size: 13px;
     font-weight: bold;
 }
 .contents .preview_banner .prev2 .item4 {
@@ -915,7 +952,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 }
 .contents .preview_banner .prev2 .item4_box p {
     position: absolute;
-    left: 335px;
+    left: 346px;
     top: 603px;
     color: #333;
     font-size: 14px;
@@ -924,13 +961,21 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
     position: absolute;
     left: 329px;
     top: 623px;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contents .preview_banner .prev2 .item4_box .price_01 {
+    position: absolute;
+    left: 419px;
+    top: 623px;
     color: #000;
     font-size: 13px;
     font-weight: bold;
 }
-.contents .preview_banner .prev2 .item4_box span {
+.contents .preview_banner .prev2 .item4_box .price_02 {
     position: absolute;
-    left: 418px;
+    left: 500px;
     top: 623px;
     color: red;
     font-size: 13px;
@@ -1100,27 +1145,18 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
     padding-top: 30px;
     color: #bbb;
 }
-.footer2_wrap .icon_wrap i.fa-facebook {
-    font-size: 30px;
-    padding-right: 15px;
+.footer2_wrap .icon_wrap i.fa-square-facebook {
+    font-size: 32px;
+    padding-right: 20px;
     cursor: pointer;
 }
-.footer2_wrap .icon_wrap i.fa-facebook:hover {
+.footer2_wrap .icon_wrap i.fa-square-facebook:hover {
     color: #3b5998;
-}
-
-.footer2_wrap .icon_wrap i.fa-twitter {
-    font-size: 30px;
-    padding-right: 15px;
-    cursor: pointer;
-}
-.footer2_wrap .icon_wrap i.fa-twitter:hover {
-    color: #00acee;
 }
 
 .footer2_wrap .icon_wrap i.fa-instagram {
     font-size: 32px;
-    padding-right: 15px;
+    padding-right: 20px;
     cursor: pointer;
 }
 .footer2_wrap .icon_wrap i.fa-instagram:hover {
@@ -1129,9 +1165,18 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
     -webkit-background-clip: text;
 }
 
+.footer2_wrap .icon_wrap i.fa-twitter {
+    font-size: 32px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.footer2_wrap .icon_wrap i.fa-twitter:hover {
+    color: #00acee;
+}
+
 .footer2_wrap .icon_wrap i.fa-kickstarter {
     font-size: 30px;
-    padding-right: 15px;
+    padding-right: 20px;
     cursor: pointer;
 }
 .footer2_wrap .icon_wrap i.fa-kickstarter:hover {
@@ -1140,7 +1185,6 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 
 .footer2_wrap .icon_wrap i.fa-youtube {
     font-size: 30px;
-    padding-right: 15px;
     cursor: pointer;
 }
 .footer2_wrap .icon_wrap i.fa-youtube:hover {
