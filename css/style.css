@@ -800,7 +800,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 .contents .preview_banner .prev1 .item1_wrapper .item1_box .btn {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 52%;
     transform: translate(-50%, 0%);
     width: 200px;
     height: 50px;
@@ -1014,7 +1014,7 @@ header nav ul.main .icon i.fa-magnifying-glass:hover {
 .look_con .lookbook_wrap .look_tit {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 36%;
     transform: translate(-50%, -45%);
     width: 332px;
     height: 43px;
